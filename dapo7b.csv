@@ -1,0 +1,9 @@
+number,backend,model,GPU,num_gpus,train_parallel,infer_parallel,micro_bs_actor/dynamic_max_token,micro_bs_logp/dynamic_max_token,step,rollout,generation,update_actor,old_logp,reshard,MFU,Other,max_prompt_len,max_response_len,bs,mini_bs,contributor
+1,fsdp,qwen2.5 7b math,H100,8,sp4fsdp32,tp4,20k,30k,746,485,399,201,55,1,0.35,,2k,8k,512,32,
+2,megatron,qwen2.5 7b math,H100,8,tp4pp2,tp4,4,10,711,339,328,261,106,2.2,0.27,,2k,8k,512,32,
+3,megatron,qwen2.5 7b math,H100,8,tp4pp2,tp4,20k,30k,708,390,355,205,107,2.2,0.35,,2k,8k,512,32,
+4,megatron,qwen2.5 7b math,H100,8,tp4,tp1,20k,60k,450,157,144,203,84,3.2,0.36,,2k,8k,512,32,
+5,megatron,qwen2.5 7b math,H100,16,tp4,tp1,20k,100k,278,114,99,111,47,3,0.34,,2k,8k,512,32,
+6,megatron,qwen2.5 7b math,H100,8,tp4,tp1,20k,60k,401,161,144,167,67,3.1,0.44,apply_rope_fusion,2k,8k,512,32,
+7,megatron,qwen2.5 7b math,H100,16,tp4,tp1,20k,100k,249,111,99,93,38,3,0.41,apply_rope_fusion,2k,8k,512,32,
+8,megatron,qwen2.5 7b math,H100,32,tp4,tp1,20k,100K,175,90,74,55,24,3,0.38,apply_rope_fusion,2k,8k,512,32,
