@@ -63,7 +63,7 @@ to be added.
 ## Practices
 
 ### DAPO MATH with dense 7B model
-see [dapo7b.csv](./dapo7b.csv).
+Experiments are conducted with veRL 0.4.0. And may include some unmerged features. see [dapo7b.csv](./dapo7b.csv).
 the performance data is the 3rd step of training.
 
 More discussions to be added.
