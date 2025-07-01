@@ -8,3 +8,6 @@ number,backend,model,GPU,num_gpus,train_parallel,infer_parallel,micro_bs_actor/d
 7,megatron,qwen2.5 7b math,H100,16,tp4,tp1,20k,100k,249,111,99,93,38,3,0.41,apply_rope_fusion,2k,8k,512,32,
 8,megatron,qwen2.5 7b math,H100,32,tp4,tp1,20k,100K,175,90,74,55,24,3,0.38,apply_rope_fusion,2k,8k,512,32,
 9,fsdp,qwen2.5 7b math,H100,32,sp4fsdp32,tp4,20k,30k,203,121,106,60,17,0.9,0.3,,2k,8k,512,32,
+10,megatron,qwen2.5 7b math,H100,8,tp4cp2,tp1,18k,100k,525,157,143,249,114,3.2,0.29,,2k,8k,512,32
+11,megatron,qwen2.5 7b math,H100,8,tp4pp2,tp1,20k,100K,426,162,146,185,74,2.4,0.4,apply_rope_fusion,2k,8k,512,32
+12,megatron,qwen2.5 7b math,H100,8,tp4pp2vpp2,tp1,20k,100K,428,159,146,187,76,2.2,0.39,apply_rope_fusion,2k,8k,512,32
