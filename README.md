@@ -23,8 +23,10 @@ actor_rollout_ref.rollout.log_prob_max_token_len_per_gpu=${infer_ppo_max_token_l
 
 
 ### 2. fused output kernel
-[see this PR](https://github.com/volcengine/verl/pull/2103). This PR use fused kernel to eliminate the logits memory during training.
-Before the fused kernel, we have an optimization to avoid recovering logits memory during training. [see this PR](https://github.com/volcengine/verl/pull/1629). 
+[see this PR](https://github.com/volcengine/verl/pull/2210). This PR use fused kernel to eliminate the logits memory during training.
+Before the fused kernel, we have an optimization to avoid recovering logits memory during training. 
+
+[see this PR](https://github.com/volcengine/verl/pull/1629). 
 These optimizations would reduce the peak memory usage for about 3-10GB, providing more room for other optimizations(Parallelism, batch size, etc.).
 
 Recommend to enable it anyway.
