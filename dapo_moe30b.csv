@@ -1,0 +1,4 @@
+number,backend,model,GPU,num_gpus,train_parallel,infer_parallel,step,rollout,generation,update_actor,old_logp,reshard,MFU,Other,max_prompt_len,max_response_len,bs,mini_bs,micro_bs_actor/dynamic_max_token,micro_bs_logp/dynamic_max_token,contributor
+2,fsdp+vllm,Qwen3-30B,H100,64,sp4fsdp32,tp4,522,334,303,167,16,13,0.02,,2k,8k,512,32,20k,30k,
+3,megatron+vllm,Qwen3-30B,H100,16,tp4ep16,tp4,633,420,395,175,63,5.5,0.082,,2k,8k,512,32,10k,100k,
+4,megatron+vllm,Qwen3-30B,H100,16,tp4ep8,tp2,562,355,331,160,41,8.5,0.096,,2k,8k,512,32,10k,30k,
