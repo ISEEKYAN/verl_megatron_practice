@@ -66,7 +66,15 @@ to be added.
 
 ### DAPO MATH with dense 7B model
 Experiments are conducted with veRL 0.4.0. And may include some unmerged features. see [dapo7b.csv](./dapo7b.csv).
-the performance data is the 3rd step of training.
+the performance data is the 3rd step of training. scripts are in [DAPO_7B](./DAPO_7B) folder.
+
+More discussions to be added.
+
+
+### DAPO MATH with MoE 30B model
+Experiments are conducted with veRL 0.4.0. And may include some unmerged features. see [dapo_moe30b.csv](./dapo_moe30b.csv).
+the performance data is the 3rd step of training. scripts are in [DAPO_MOE30B](./DAPO_MOE30B) folder.
+
 
 More discussions to be added.
 
