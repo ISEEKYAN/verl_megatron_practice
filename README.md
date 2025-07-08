@@ -49,13 +49,28 @@ It is challenging to tune the parallelism for different models and different har
 
 We will try to give a better reference for it. Now please see other materials of pretraining on megatron, such as [Nemo's reference](https://github.com/NVIDIA/NeMo/blob/main/scripts/performance/recommended_model_configs/model_configs_h100.csv).
 
-### 5. inference engine specific optimization
+### 5. Other megatron optimizations
+#### recompute
+```bash
++actor_rollout_ref.actor.megatron.override_transformer_config.recompute_method=uniform \
++actor_rollout_ref.actor.megatron.override_transformer_config.recompute_granularity=full \
++actor_rollout_ref.actor.megatron.override_transformer_config.recompute_num_layers=1 \
+```
+
+more recompute granularity to be added.
+#### 1f1b overlap
+to be added.
+
+
+
+
+### 6. inference engine specific optimization
 a simple principle is to use the least parallelism and the largest `gpu_memory_utilization` as possible, unless OOM.
 
 more details to be added.
 
 
-### 6. Async training
+### 7. Async training
 to be added.
 
 
