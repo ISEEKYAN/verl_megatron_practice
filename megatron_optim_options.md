@@ -68,7 +68,7 @@ Context Parallel decreases computation by $O(CP^2)$, and introduces constant com
 
 Hierarchical Context Parallel allows to use Ulysses CP + Context Parallel, suitable for extremely over-long sequences.
 
-**TLDR: SP default enables, USP$=\min{\frac{NPROCS\_PER\_NODE}{TP}, kv\_head}$, CP computation overlappable by its inter-node communication.**
+**TLDR: SP default enables, USP$=\min{\frac{NPROCS\_ PER\_ NODE}{TP}, kv\_ head}$, CP computation overlappable by its inter-node communication.**
 
 ### Expert Model Parallel(EP) and Expert Tensor Parallel(ETP)
 
@@ -86,7 +86,7 @@ ETP is not recommanded to use since its matrix-multiplication is smaller and mor
 
 ### Pipeline Model Parallel(PP), Virtual Pipeline Model Parallel(VPP) and Flexible Pipeline Layout
 
-PP devides model by layer. Each PP rank owns $\frac{total\_layers}{PP}$ layers but devided into VPP size of incontinuous layer blocks.
+PP devides model by layer. Each PP rank owns $\frac{total\_ layers}{PP}$ layers but devided into VPP size of incontinuous layer blocks.
 
 Pipeline Parallelism bubble rate is $\frac{1}{v}\cdot \frac{p-1}{m}$([1]), so increasing micro-batch-size and VPP size helps improve performance. While micro-batch-size can increase activation memory pressure, here is a trade-off.
 
@@ -96,7 +96,7 @@ Flexible Pipeline Layout: Since models like qwen3-moe 235B or DeepSeek-V3 is mor
 
 #### Data Parallel
 
-Data Parallel size is set automatically to $\frac{WORLD\_SIZE}{TP\times CP\times PP}$, determining iteration time but only affects distributed optimizer in mini-batch time.
+Data Parallel size is set automatically to $\frac{WORLD\_ SIZE}{TP\times CP\times PP}$, determining iteration time but only affects distributed optimizer in mini-batch time.
 
 ## Extra
 
