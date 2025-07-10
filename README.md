@@ -11,6 +11,8 @@ This repo will contain extensive practices of megatron on veRL for reference of 
 With dynamic batch size, we make micro batchs across time/GPUs to be balanced. It is recommended to enable it anyway.
 And make the `max_token_len_per_gpu` as large as possible. The only limitation is the memory of GPUs.
 
+[balanced dynamic batching](https://github.com/volcengine/verl/pull/2452) makes dynamic batching more balanced across DP and PP(1f1b). Reducing the bubbles.
+
 ```bash
 use_dynamic_bsz=True
 actor_rollout_ref.actor.use_dynamic_bsz=${use_dynamic_bsz} \
