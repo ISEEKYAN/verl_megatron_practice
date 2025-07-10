@@ -104,7 +104,7 @@ Good practice by NVIDIA: [Megatron-MoE-ModelZoo](https://github.com/yanring/Mega
 
 DeepSeek-V3 pretrain best pactice, by NVIDIA:
 
-![dpsk-V3](./images/dpsk-V3-best-practice.png)
+![dpsk-V3](./images/dpsk-V3-best-practice.jpg)
 
 ## Reference
 
