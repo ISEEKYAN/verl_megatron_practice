@@ -6,4 +6,4 @@ number,backend,model,GPU,num_gpus,train_parallel,infer_parallel,step,rollout,gen
 6,megatron+vllm,Qwen3-30B,H100,16,tp4ep16,tp4,686,454,424,171,56,5.7,0.087,deepep,2k,8k,512,32,10k,100k,
 7,megatron+vllm,Qwen3-30B,H100,32,tp4ep32,tp2,486,331,308,105,45,4.5,0.071,,2k,8k,512,32,15k,100k,
 8,megatron+vllm,Qwen3-30B,H100,32,tp2ep8,tp4,466,356,329,83,23,7.8,0.094,full_recompute,2k,8k,512,32,10k,100k,
-9,megatron+vllm,Qwen3-30B,H100,32,tp4ep8,tp2,530,425,361,76,25,7.8,0.101,,2k,8k,512,32,15k,100k,
+9,megatron+vllm,Qwen3-30B,H100,32,tp4ep8,tp2,530,425,361,76,25,7.8,0.101,pretrain MFU=0.122,2k,8k,512,32,15k,100k,
