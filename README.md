@@ -76,8 +76,9 @@ more details to be added.
 to be added.
 
 
+## Megatron Performance Optimization Options
 
-
+Refer to [megatron_optim_options](./megatron_optim_options.md) to find more details of arguments adjustment to achieve better proformance.
 
 ## Practices
 
