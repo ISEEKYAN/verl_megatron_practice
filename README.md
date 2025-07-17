@@ -84,30 +84,23 @@ Refer to [megatron_optim_options](./megatron_optim_options.md) to find more deta
 
 ## Practices
 
-### DAPO MATH with dense 7B model
-Experiments are conducted with veRL 0.4.0. And may include some unmerged features. see [dapo7b.csv](./dapo7b.csv).
-the performance data is the 3rd step of training. scripts are in [DAPO_7B](./DAPO_7B) folder.
+All benchmarks were conducted using Docker image `verlai/verl:app-verl0.4-vllm0.8.5-mcore0.13.0-preview` and code from the `mcore_fused` branch of `https://github.com/ISEEKYAN/verl.git` (a veRL 0.4.0 derivative with custom features). Performance data reflects the 3rd training step.
 
-More discussions to be added.
+-   **DAPO MATH with dense 7B model**
+    -   **Note**: Requires modifying `max_position_embeddings` to `32768` in the `Qwen2.5-Math-7B`'s `config.json`.
+    -   **Results**: [dapo7b.csv](./dapo7b.csv)
+    -   **Scripts**: [DAPO_7B/](./DAPO_7B/)
 
+-   **DAPO MATH with MoE 30B model**
+    -   **Results**: [dapo_moe30b.csv](./dapo_moe30b.csv)
+    -   **Scripts**: [DAPO_MOE30B/](./DAPO_MOE30B/)
 
-### DAPO MATH with MoE 30B model
-Experiments are conducted with veRL 0.4.0. And may include some unmerged features. see [dapo_moe30b.csv](./dapo_moe30b.csv).
-the performance data is the 3rd step of training. scripts are in [DAPO_MOE30B](./DAPO_MOE30B) folder.
+-   **DAPO MATH with MoE 235B model**
+    -   **Results**: [dapo_moe235b.csv](./dapo_moe235b.csv)
+    -   **Scripts**: [DAPO_MOE235B/](./DAPO_MOE235B/)
 
-
-More discussions to be added.
-
-
-
-
-
-
-
-### GRPO with qwen2.5vl-7B
-see [grpo_qwen2_5vl.csv](./grpo_qwen2_5vl.csv).
-
-
+-   **GRPO with qwen2.5vl-7B**
+    -   **Results**: [grpo_qwen2_5vl.csv](./grpo_qwen2_5vl.csv)
 
 
 
