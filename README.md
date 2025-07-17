@@ -51,6 +51,8 @@ It is challenging to tune the parallelism for different models and different har
 
 We will try to give a better reference for it. Now please see other materials of pretraining on megatron, such as [Nemo's reference](https://github.com/NVIDIA/NeMo/blob/main/scripts/performance/recommended_model_configs/model_configs_h100.csv).
 
+For memory estimation, please use my [estimator](https://huggingface.co/spaces/ISEEKYAN/megatron_memory_estimator)
+
 ### 5. Other megatron optimizations
 #### recompute
 ```bash
