@@ -14,3 +14,7 @@ number,backend,model,GPU,num_gpus,train_parallel,infer_parallel,step,rollout,gen
 14,megatron+vllm,Qwen3-30B,H100,32,ep8,tp4,,,,79,21,,0.1,,2k,8k,512,32,10k,30k,
 15,megatron+vllm,Qwen3-30B,H100,32,ep8cp2,tp4,,,,60,22,,0.14,,2k,8k,512,64,30k,30k,
 16,megatron+vllm,Qwen3-30B,H100,32,ep8cp4,tp4,,,,64,24,,0.133,,2k,8k,512,64,30k,30k,
+17,megatron+vllm,Qwen3-30B,H20,32,ep8,tp4,602,448,418,122,41,12,0.454,deepep+selective recompute,2k,8k,512,128,10k,10k,
+18,megatron+vllm,Qwen3-30B,H20,32,ep8,tp4,,,,,,,0.45,deepep+full recompute,2k,8k,512,128,30k,30k,
+19,megatron+vllm,Qwen3-30B,H20,32,ep8cp2tp2,tp4,,,,,,,0.438,deepep+no recompute,2k,8k,512,128,10k,10k,
+20,megatron+vllm,Qwen3-30B,H20,32,ep4tp4,tp4,,,,,,,0.35,decrease fast when seqlen increases,2k,8k,512,128,10k,10k,
