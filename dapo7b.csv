@@ -17,5 +17,5 @@ number,backend,model,GPU,num_gpus,train_parallel,infer_parallel,step,rollout,gen
 17,megatron+vllm,qwen2.5 7b math,H100,8,tp2cp2,tp1,402,163,145,169,65,4.1,0.439,apply_rope_fusion,2k,8k,512,32,10k,30k,
 18,megatron+vllm,qwen2.5 7b math,H100,32,tp2,tp1,196,97,76,66,28,6,0.356,apply_rope_fusion,2k,8k,512,32,10k,100k,
 19,megatron+vllm,qwen2.5 7b math,H20,32,tp4cp2,tp4,336,132,105,137,58,4.5,0.775,all optimization option(no recompute),2k,8k,512,32,10k,10k,
-20,megatron+vllm,qwen2.5 7b math,H20,32,tp2cp2,tp4,336,132,105,137,58,4.5,0.775,all optimization option(no recompute),2k,8k,512,32,10k,30k,
-21,megatron+vllm,qwen2.5 7b math,H20,32,all dp,tp4,336,132,105,137,58,4.5,0.5,all optimization option(selective recompute),2k,8k,512,32,10k,30k,
+20,megatron+vllm,qwen2.5 7b math,H20,32,tp2cp2,tp4,,,,,,,0.775,all optimization option(no recompute),2k,8k,512,32,10k,30k,
+21,megatron+vllm,qwen2.5 7b math,H20,32,all dp,tp4,,,,,,,0.5,all optimization option(selective recompute),2k,8k,512,32,10k,30k,
