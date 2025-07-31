@@ -1,0 +1,7 @@
+number,backend,model,GPU,num_gpus,train_parallel,infer_parallel,throughput,response_length,step,rollout/gen,generation,update_actor,old_logp,reshard,MFU,Other,max_prompt_len,max_response_len,bs,mini_bs,micro_bs_actor/dynamic_max_token,micro_bs_logp/dynamic_max_token,contributor
+2,fsdp+vllm,qwen2.5 32b,H20,64,sp8fsdp64,tp4,127.835,1827.308,2001.112,1253.334,1051.917,576.181,152.138,3.044,0.625,,2K,20K,512,32,\,\,bytedance
+3,fsdp+vllm,qwen2.5 32b,H20,64,sp8fsdp64,tp8,110.137,2819.061,3482.747,2310.678,2122.574,917.905,228.566,3,0.618,,2K,20K,512,32,\,\,bytedance
+4,fsdp+vllm,qwen2.5 32b,H20,64,sp8fsdp32,tp4,148.315,1489.726,1434.384,817.212,627.29,473.663,127.355,2.779,0.626,,2K,20K,512,32,\,\,bytedance
+5,fsdp+vllm,qwen2.5 32b,H20,32,sp8fsdp32,tp4,173.166,1354.366,2257.136,1203.142,1070.415,819.309,218.051,2.614,0.665,,2K,20K,512,32,\,\,bytedance
+6,megatron+vllm,qwen2.5 32b,H20,32,tp8pp2,tp8,174.121,1544.39,2527.259,1360.001,642.561,840.336,315.388,6.225,0.753,apply_rope_fusion,2K,20K,512,32,\,\,bytedance
+7,megatron+vllm,qwen2.5 32b,H20,64,tp8pp2,tp8,120.279,1429.932,1702.944,1094.522,290.892,422.157,172.233,6.267,0.72,apply_rope_fusion,2K,20K,512,32,\,\,bytedance
