@@ -1,2 +1,3 @@
 number,backend,model,GPU,num_gpus,train_parallel,infer_parallel,step,rollout,generation,update_actor,old_logp,reshard,MFU,Other,max_prompt_len,max_response_len,bs,mini_bs,micro_bs_actor/dynamic_max_token,micro_bs_logp/dynamic_max_token,contributor
 2,megatron+vllm,qwen3-235B,H100,256,tp4pp8ep32,tp16,4410,3360,2970,704,333,25,0.066,full_recompute,2k,8k,512,32,10k,100k,
+3,megatron+vllm,qwen3-235B,H100,128,pp8vpp2ep8,full recompute,tp16,,,,39,18,25,0.222,,2k,8k,64,64,10k,30k,
