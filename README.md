@@ -84,7 +84,6 @@ Refer to [megatron_optim_options](./megatron_optim_options.md) to find more deta
 
 ## Practices
 
-All benchmarks were conducted using Docker image `verlai/verl:app-verl0.4-vllm0.8.5-mcore0.13.0-preview` and code from the `mcore_fused` branch of `https://github.com/ISEEKYAN/verl.git` (a veRL 0.4.0 derivative with custom features). Performance data reflects the 3rd training step.
 
 -   **DAPO MATH with dense 7B model**
     -   **Note**: Requires modifying `max_position_embeddings` to `32768` in the `Qwen2.5-Math-7B`'s `config.json`.
