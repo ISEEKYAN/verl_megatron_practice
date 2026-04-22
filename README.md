@@ -101,6 +101,10 @@ Refer to [megatron_optim_options](./megatron_optim_options.md) to find more deta
 -   **GRPO with qwen2.5vl-7B**
     -   **Results**: [grpo_qwen2_5vl.csv](./grpo_qwen2_5vl.csv)
 
+-   **Qwen3.5-35B-A3B Megatron-only 128K benchmark**
+    -   **Note**: 32x H100 80G, Megatron-only harness, no veRL rollout/inference throughput included.
+    -   **Results**: [qwen3_5_35b_megatron.csv](./qwen3_5_35b_megatron.csv)
+
 
 
 
