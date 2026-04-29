@@ -1,9 +1,0 @@
-GPU,num_gpus,seq_len,tp,pp*ep,recompute_mode,cp,tflops_per_gpu,peak_mem_gb
-H100 80G,32,131072,2,2*16,full,2,,
-H100 80G,32,131072,2,2*16,full,4,81.05,38.24
-H100 80G,32,131072,2,4*8,full,1,,
-H100 80G,32,131072,2,4*8,full,2,127.53,42.91
-H100 80G,32,131072,2,2*16,selective_moe,4,,
-H100 80G,32,131072,2,2*16,selective_moe,8,76.89,57.59
-H100 80G,32,131072,2,4*8,selective_moe,2,,
-H100 80G,32,131072,2,4*8,selective_moe,4,,
