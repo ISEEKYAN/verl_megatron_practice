@@ -1,11 +1,17 @@
-model_size,GPU,num_gpus,seq_len,tp,pp*ep,recompute_mode,cp,tflops_per_gpu,peak_mem_gb,notes
-35B,H100 80G,32,131072,2,2*16,full,2,,,
-35B,H100 80G,32,131072,2,2*16,full,4,81.05,38.24,
-35B,H100 80G,32,131072,2,4*8,full,1,,,
-35B,H100 80G,32,131072,2,4*8,full,2,127.53,42.91,
-35B,H100 80G,32,131072,2,2*16,selective_moe,4,,,
-35B,H100 80G,32,131072,2,2*16,selective_moe,8,76.89,57.59,
-35B,H100 80G,32,131072,2,4*8,selective_moe,2,,,
-35B,H100 80G,32,131072,2,4*8,selective_moe,4,,,
-122B,H100 80G,128,131072,2,8*8,full,2,117,72,optimizer_cpu_offload_fraction=1
-122B,H100 80G,128,131072,2,4*8,full,4,142.1,65,optimizer_cpu_offload_fraction=1
+model_size,GPU,num_gpus,seq_len,megatron_fsdp,tp,pp*ep,cp,cp_comm_type,mbs,gbs,recompute_mode,tflops_per_gpu,peak_mem_gb,notes
+35B,H100 80G,32,131072,false,2,2*16,2,all_gather,1,64,full,,,
+35B,H100 80G,32,131072,false,2,2*16,4,all_gather,1,64,full,81.05,38.24,
+35B,H100 80G,32,131072,false,2,4*8,1,all_gather,1,64,full,,,
+35B,H100 80G,32,131072,false,2,4*8,2,all_gather,1,64,full,127.53,42.91,
+35B,H100 80G,32,131072,false,2,2*16,4,all_gather,1,64,selective_moe,,,
+35B,H100 80G,32,131072,false,2,2*16,8,all_gather,1,64,selective_moe,76.89,57.59,
+35B,H100 80G,32,131072,false,2,4*8,2,all_gather,1,64,selective_moe,,,
+35B,H100 80G,32,131072,false,2,4*8,4,all_gather,1,64,selective_moe,,,
+35B,H100 80G,32,131072,true,2,1*4,4,p2p,1,64,full,168.95,42.54,
+35B,H100 80G,32,131072,true,2,1*8,4,p2p,1,64,full,172.65,42.54,
+35B,H100 80G,32,131072,true,2,1*16,4,p2p,1,64,full,136.95,42.54,
+35B,H100 80G,32,131072,true,2,1*4,8,p2p,1,64,full,115.40,34.50,
+35B,H100 80G,32,131072,true,2,1*8,8,p2p,1,64,full,126.20,34.07,
+35B,H100 80G,32,131072,true,2,1*16,8,p2p,1,64,full,110.50,33.97,
+122B,H100 80G,128,131072,false,2,8*8,2,all_gather,1,64,full,117,72,optimizer_cpu_offload_fraction=1
+122B,H100 80G,128,131072,false,2,4*8,4,all_gather,1,64,full,142.1,65,optimizer_cpu_offload_fraction=1
